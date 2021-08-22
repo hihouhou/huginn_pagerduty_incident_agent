@@ -27,87 +27,88 @@ module Agents
 
     event_description <<-MD
       Events look like this:
-        {
-          "incident": {
-            "incident_number": 3,
-            "title": "test",
-            "description": "test",
-            "created_at": "2021-07-31T16:34:10Z",
-            "status": "triggered",
-            "incident_key": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-            "service": {
-              "id": "XXXXXX",
-              "type": "service_reference",
-              "summary": "test",
-              "self": "https://api.pagerduty.com/services/XXXXXX",
-              "html_url": "https://XXXXXXXXXXXXXX.pagerduty.com/service-directory/XXXXXX"
-            },
-            "assignments": [
-              {
-                "at": "2021-07-31T16:34:11Z",
-                "assignee": {
-                  "id": "XXXXXX",
-                  "type": "user_reference",
-                  "summary": "XXXXXXXXXXXXXXX",
-                  "self": "https://api.pagerduty.com/users/XXXXXX",
-                  "html_url": "https://XXXXXXXXXXXXXX.pagerduty.com/users/XXXXXX"
-                }
-              }
-            ],
-            "assigned_via": "escalation_policy",
-            "last_status_change_at": "2021-07-31T16:34:10Z",
-            "first_trigger_log_entry": {
-              "id": "XXXXXXXXXXXXXXXXXXXXXXXXXX",
-              "type": "trigger_log_entry_reference",
-              "summary": "Triggered through the website",
-              "self": "https://api.pagerduty.com/log_entries/XXXXXXXXXXXXXXXXXXXXXXXXXX",
-              "html_url": "https://XXXXXXXXXXXXXX.pagerduty.com/incidents/XXXXXX/log_entries/XXXXXXXXXXXXXXXXXXXXXXXXXX"
-            },
-            "alert_counts": {
-              "all": 0,
-              "triggered": 0,
-              "resolved": 0
-            },
-            "is_mergeable": true,
-            "escalation_policy": {
-              "id": "XXXXXX",
-              "type": "escalation_policy_reference",
-              "summary": "test-ep",
-              "self": "https://api.pagerduty.com/escalation_policies/XXXXXX",
-              "html_url": "https://XXXXXXXXXXXXXX.pagerduty.com/escalation_policies/XXXXXX"
-            },
-            "teams": [],
-            "impacted_services": [
-              {
+
+          {
+            "incident": {
+              "incident_number": 3,
+              "title": "test",
+              "description": "test",
+              "created_at": "2021-07-31T16:34:10Z",
+              "status": "triggered",
+              "incident_key": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+              "service": {
                 "id": "XXXXXX",
                 "type": "service_reference",
                 "summary": "test",
                 "self": "https://api.pagerduty.com/services/XXXXXX",
                 "html_url": "https://XXXXXXXXXXXXXX.pagerduty.com/service-directory/XXXXXX"
-              }
-            ],
-            "pending_actions": [],
-            "acknowledgements": [],
-            "basic_alert_grouping": null,
-            "alert_grouping": null,
-            "last_status_change_by": {
+              },
+              "assignments": [
+                {
+                  "at": "2021-07-31T16:34:11Z",
+                  "assignee": {
+                    "id": "XXXXXX",
+                    "type": "user_reference",
+                    "summary": "XXXXXXXXXXXXXXX",
+                    "self": "https://api.pagerduty.com/users/XXXXXX",
+                    "html_url": "https://XXXXXXXXXXXXXX.pagerduty.com/users/XXXXXX"
+                  }
+                }
+              ],
+              "assigned_via": "escalation_policy",
+              "last_status_change_at": "2021-07-31T16:34:10Z",
+              "first_trigger_log_entry": {
+                "id": "XXXXXXXXXXXXXXXXXXXXXXXXXX",
+                "type": "trigger_log_entry_reference",
+                "summary": "Triggered through the website",
+                "self": "https://api.pagerduty.com/log_entries/XXXXXXXXXXXXXXXXXXXXXXXXXX",
+                "html_url": "https://XXXXXXXXXXXXXX.pagerduty.com/incidents/XXXXXX/log_entries/XXXXXXXXXXXXXXXXXXXXXXXXXX"
+              },
+              "alert_counts": {
+                "all": 0,
+                "triggered": 0,
+                "resolved": 0
+              },
+              "is_mergeable": true,
+              "escalation_policy": {
+                "id": "XXXXXX",
+                "type": "escalation_policy_reference",
+                "summary": "test-ep",
+                "self": "https://api.pagerduty.com/escalation_policies/XXXXXX",
+                "html_url": "https://XXXXXXXXXXXXXX.pagerduty.com/escalation_policies/XXXXXX"
+              },
+              "teams": [],
+              "impacted_services": [
+                {
+                  "id": "XXXXXX",
+                  "type": "service_reference",
+                  "summary": "test",
+                  "self": "https://api.pagerduty.com/services/XXXXXX",
+                  "html_url": "https://XXXXXXXXXXXXXX.pagerduty.com/service-directory/XXXXXX"
+                }
+              ],
+              "pending_actions": [],
+              "acknowledgements": [],
+              "basic_alert_grouping": null,
+              "alert_grouping": null,
+              "last_status_change_by": {
+                "id": "XXXXXX",
+                "type": "service_reference",
+                "summary": "test",
+                "self": "https://api.pagerduty.com/services/XXXXXX",
+                "html_url": "https://XXXXXXXXXXXXXX.pagerduty.com/service-directory/XXXXXX"
+              },
+              "incidents_responders": [],
+              "responder_requests": [],
+              "subscriber_requests": [],
+              "urgency": "high",
               "id": "XXXXXX",
-              "type": "service_reference",
-              "summary": "test",
-              "self": "https://api.pagerduty.com/services/XXXXXX",
-              "html_url": "https://XXXXXXXXXXXXXX.pagerduty.com/service-directory/XXXXXX"
-            },
-            "incidents_responders": [],
-            "responder_requests": [],
-            "subscriber_requests": [],
-            "urgency": "high",
-            "id": "XXXXXX",
-            "type": "incident",
-            "summary": "[#3] test",
-            "self": "https://api.pagerduty.com/incidents/XXXXXX",
-            "html_url": "https://XXXXXXXXXXXXXX.pagerduty.com/incidents/XXXXXX"
+              "type": "incident",
+              "summary": "[#3] test",
+              "self": "https://api.pagerduty.com/incidents/XXXXXX",
+              "html_url": "https://XXXXXXXXXXXXXX.pagerduty.com/incidents/XXXXXX"
+            }
           }
-        }
     MD
 
     def default_options
